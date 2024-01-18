@@ -1,0 +1,36 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(135, 206, 235);
+}
+.container{
+    display: flex;
+    justify-content:center;
+}
+
+.caja{
+    background-color: skyblue;
+    height: 25rem;
+    width: 6rem;
+    margin: 8px;
+    border-radius: 15px;
+    position: relative;
+    flex: 0.25;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgba(32, 33, 102, 0.296);
+}
+.caja img{
+    position: relative;
+    height: 400px;
+    object-fit: cover;
+}
+.caja:hover{
+    flex:2;
+    width: 10rem;
+}
